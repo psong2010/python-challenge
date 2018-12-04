@@ -48,7 +48,7 @@ with open("budget_data.csv", "r") as csvfile:
         else:
             maxLoss = maxLoss
 
-    # Zipping together changeList and monthList after index 1. This is because the first month is irrelevant information.
+    # Zipping together changeList and monthList after index 1. This is because the first month is irrelevant information when comparing profit.
     mapped = zip(changeList, monthList[1::])
     
     for profit, date in mapped:
